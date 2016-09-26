@@ -9,7 +9,7 @@ class MetaData extends Model
     /**
      * @var array
      */
-    protected $fillable = ['key', 'value'];
+    protected $fillable = ['meta_key', 'value'];
 
     /**
      * @var array

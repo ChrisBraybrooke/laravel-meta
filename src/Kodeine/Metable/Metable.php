@@ -43,7 +43,7 @@ trait Metable
         }
 
         return $this->metaData[$key] = $this->getModelStub([
-            'key'   => $key,
+            'meta_key'   => $key,
             'value' => $value
         ]);
     }
@@ -216,7 +216,7 @@ trait Metable
                 if ( ! is_null($objects) ) {
                     $this->metaLoaded = true;
 
-                    return $this->metaData = $objects->keyBy('key');
+                    return $this->metaData = $objects->keyBy('meta_key');
                 }
             }
             $this->metaLoaded = true;
