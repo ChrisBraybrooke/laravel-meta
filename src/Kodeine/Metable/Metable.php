@@ -95,7 +95,7 @@ trait Metable
      * -------------------------
      */
 
-    function getMeta($key = null, $raw = false)
+    function getMeta($key = null, $raw = true)
     {
         if ( is_string($key) && preg_match('/[,|]/is', $key, $m) ) {
             $key = preg_split('/ ?[,|] ?/', $key);

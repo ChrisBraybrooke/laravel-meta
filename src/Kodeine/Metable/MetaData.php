@@ -11,6 +11,13 @@ class MetaData extends Model
      */
     protected $fillable = ['meta_key', 'value'];
 
+    protected $hidden = [
+        'id',
+        'user_id',
+        'type',
+        'created_at',
+    ];
+
     /**
      * @var array
      */
